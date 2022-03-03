@@ -1,17 +1,14 @@
-const express = require('express');
-const morgan = require('morgan');
+var express = require('express');
+var app = express();
 
-const app = express();
+app.set('port', (process.env.PORT || 5000));
 
-app.use(morgan('combined'));
-
-app.get('/', (req, res)  => {
-  res.send('Hello from Express.js server!')
-});
-
-// run the server on the port 8080
-app.listen(8080, () => {
-  console.log('Hello world!');
+//For avoidong Heroku $PORT error
+app.get('/', function(request, response) {
+    var result = 'App is running'
+    response.send(result);
+}).listen(app.get('port'), function() {
+    console.log('App is running, server is listening on port ', app.get('port'));
 });
 
 function formata(){
