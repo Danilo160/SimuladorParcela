@@ -1,2 +1,2 @@
-web: node parcelamento.js
+web: node src/server.js
 
