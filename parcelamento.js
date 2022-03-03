@@ -1,7 +1,7 @@
-const express = require('express');
-const PORT = process.env.PORT || '8080'
-app = express();
-app.set('port',PORT);
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+    console.log("Ready on http://localhost:" + PORT)
+});
 
 function formata(){
 	document.getElementById("produto").value = parseFloat(document.getElementById("produto").value).toFixed(2);
