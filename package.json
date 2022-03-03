@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Danilo160/SimuladorParcela/issues"
   },
-  "homepage": "https://github.com/Danilo160/SimuladorParcela#readme"
+  "homepage": "https://github.com/Danilo160/SimuladorParcela#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
