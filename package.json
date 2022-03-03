@@ -4,6 +4,7 @@
   "description": "",
   "main": "parcelamento.js",
   "scripts": {
+    "start": "node server.js",
     "start": "node parcelamento.js",
     "heroku-postbuild": "npm run build"
   },
