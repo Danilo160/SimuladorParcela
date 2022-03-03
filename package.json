@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "parcelamento.js",
+  "engines": {
+    "node": "8.1.2"
+  },
   "scripts": {
     "start": "node parcelamento.js"
   },
