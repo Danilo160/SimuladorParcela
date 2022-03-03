@@ -1,0 +1,19 @@
+{
+  "name": "parcelamento",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parcelamento.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danilo160/SimuladorParcela.git"
+  },
+  "author": "Danilo Correia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danilo160/SimuladorParcela/issues"
+  },
+  "homepage": "https://github.com/Danilo160/SimuladorParcela#readme"
+}
