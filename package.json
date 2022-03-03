@@ -4,7 +4,7 @@
   "description": "",
   "main": "parcelamento.js",
   "scripts": {
-    "run": "node parcelamento.js"
+    "start": "node parcelamento.js"
   },
   "repository": {
     "type": "git",
