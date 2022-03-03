@@ -2,21 +2,22 @@
 <html lang="pt-BR">
 <head>
    <meta charset="UTF-8">
-   <title>Tarefas</title> 
+   <title>Simulador de Parcelamento</title> 
    <meta name="viewport" content="width=device-width,initial-scale=1">
    <link rel="stylesheet" media="screen" href="estilo.css">
-   <script src="tarefas.js"></script>
+   <script src="parcelamento.js"></script>
 
 </head>
 <body> 
 <div>
-<h1 id="titulo">Tarefas</h1>
+<h1 id="titulo">Simulador de Parcelamento</h1>
 </br>
 <form>
-  <input type="text" id="tarefa" placeholder="Insira o nome da tarefa" />
-  <input type="button" id="adicionar" value="adicionar" onclick="adicionaTarefas()"/>
-  <input type="button" id="limpar" value="limpar tudo" onclick="limparTarefas()"/>
-  <div id="divtarefas"></div>
+  <input type="number" id="produto" placeholder="Valor do produto em R$" onchange="formata()" min='1.00' step="0.01" />
+  <input type="number" id="parcela" placeholder="Número de parcelas" onkeypress="return event.charCode >=48 && event.charCode <=57;" />
+  <input type="button" id="calcular" value="calcular" onclick="calculoParcelamento()"/>
+  <p id="porcentagem"><b></b></p>
+  <table></table>
 </form>
 
 </div>
