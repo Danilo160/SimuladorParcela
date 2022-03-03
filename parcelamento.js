@@ -1,6 +1,17 @@
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-    console.log("Ready on http://localhost:" + PORT)
+const express = require('express');
+const morgan = require('morgan');
+
+const app = express();
+
+app.use(morgan('combined'));
+
+app.get('/', (req, res)  => {
+  res.send('Hello from Express.js server!')
+});
+
+// run the server on the port 8080
+app.listen(8080, () => {
+  console.log('Hello world!');
 });
 
 function formata(){
